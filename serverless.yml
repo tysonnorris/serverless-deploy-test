@@ -30,7 +30,7 @@ functions:
     name: "cosmos-deploytest2/hello"
   hello4:
     handler: handler.hello
-    name: "cosmos-deploytes2t/hello2"
+    name: "cosmos-deploytest2/hello2"
 
 resources:
   packages:
