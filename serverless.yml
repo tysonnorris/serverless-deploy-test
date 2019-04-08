@@ -34,9 +34,9 @@ functions:
 
 resources:
   packages:
-    deploytest:
+    cosmos-deploytest:
       name: "cosmos-deploytest"
-    deploytest2:
+    cosmos-deploytest2:
       name: "cosmos-deploytest2"
 
 # extend the framework using plugins listed here:
