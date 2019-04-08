@@ -7,7 +7,7 @@
     "serverless",
     "openwhisk"
   ],
-  "script": {
+  "scripts": {
     "deploy": "serverless deploy -v --prefix 1234567",
     "remove": "serverless remove -v --prefix 1234567"
   },
