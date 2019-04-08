@@ -21,23 +21,23 @@ provider:
 functions:
   hello:
     handler: handler.hello
-    name: "test-commerce-cif-commercetools-cart@ct-CIF790-336-${opt:prefix}/hello"
-  hello3:
-    handler: handler.hello
-    name: "test-commerce-cif-commercetools-cart@ct-CIF790-336-${opt:prefix}/hello2"
+    name: "cosmos-deploytest/hello"
   hello2:
     handler: handler.hello
-    name: "test-commerce-cif-commercetools-cart@ct-CIF790-3362-${opt:prefix}/hello"
+    name: "cosmos-deploytest/hello2"
+  hello3:
+    handler: handler.hello
+    name: "cosmos-deploytest2/hello"
   hello4:
     handler: handler.hello
-    name: "test-commerce-cif-commercetools-cart@ct-CIF790-3362-${opt:prefix}/hello2"
+    name: "cosmos-deploytes2t/hello2"
 
 resources:
   packages:
     deploytest:
-      name: "test-commerce-cif-commercetools-cart@ct-CIF790-336-${opt:prefix}"
+      name: "cosmos-deploytest"
     deploytest2:
-      name: "test-commerce-cif-commercetools-cart@ct-CIF790-3362-${opt:prefix}"
+      name: "cosmos-deploytest2"
 
 # extend the framework using plugins listed here:
 # https://github.com/serverless/plugins
