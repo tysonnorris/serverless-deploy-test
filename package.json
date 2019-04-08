@@ -7,6 +7,10 @@
     "serverless",
     "openwhisk"
   ],
+  "script": {
+    "deploy": "serverless deploy -v --prefix 1234567",
+    "remove": "serverless remove -v --prefix 1234567"
+  }
   "devDependencies": {
     "serverless-openwhisk": ">=0.13.0"
   }
