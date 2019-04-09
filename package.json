@@ -10,10 +10,10 @@
   "scripts": {
     "deploy": "serverless deploy -v",
     "remove": "serverless remove -v",
-    "invoke1": "serverless invoke -v --function cosmos-deploytest/hello",
-    "invoke2": "serverless remove -v --function cosmos-deploytest/hello",
-    "invoke3": "serverless invoke -v --function cosmos-deploytest2/hello",
-    "invoke4": "serverless remove -v --function cosmos-deploytest2/hello2"
+    "invoke1": "serverless invoke -v --function hello",
+    "invoke2": "serverless invoke -v --function hello2",
+    "invoke3": "serverless invoke -v --function hello3",
+    "invoke4": "serverless invoke -v --function hello4"
   },
   "devDependencies": {
     "serverless-openwhisk": ">=0.13.0"
