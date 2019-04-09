@@ -8,8 +8,12 @@
     "openwhisk"
   ],
   "scripts": {
-    "deploy": "serverless deploy -v --prefix 1234567",
-    "remove": "serverless remove -v --prefix 1234567"
+    "deploy": "serverless deploy -v",
+    "remove": "serverless remove -v",
+    "invoke1": "serverless invoke -v --function cosmos-deploytest/hello",
+    "invoke2": "serverless remove -v --function cosmos-deploytest/hello",
+    "invoke3": "serverless invoke -v --function cosmos-deploytest2/hello",
+    "invoke4": "serverless remove -v --function cosmos-deploytest2/hello2"
   },
   "devDependencies": {
     "serverless-openwhisk": ">=0.13.0"

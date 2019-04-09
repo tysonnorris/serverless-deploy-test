@@ -37,6 +37,10 @@ jobs:
       # run tests!
       # - run: yarn test
       - run: yarn run deploy
+      - run: yarn run invoke1
+      - run: yarn run invoke2
+      - run: yarn run invoke3
+      - run: yarn run invoke4
       - run: yarn run remove
 
 workflows:
