@@ -39,18 +39,18 @@ jobs:
       - run: yarn run deploy
       - run: yarn run remove
 
-#workflows:
-#  version: 2
-#  commit:
-#    jobs:
-#      - build
-#  repeating:
-#    triggers:
-#      - schedule:
-#          cron: "* * * * *"
-#          filters:
-#            branches:
-#              only:
-#                - master
-#    jobs:
-#      - build
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - build
+  repeating:
+    triggers:
+      - schedule:
+          cron: "* * * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build
