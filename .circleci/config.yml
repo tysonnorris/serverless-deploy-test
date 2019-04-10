@@ -41,7 +41,8 @@ jobs:
       - run: yarn run invoke2
       - run: yarn run invoke3
       - run: yarn run invoke4
-      #- run: ./delete.sh
+      - run: sleep 30s
+      - run: ./delete.sh
 
 workflows:
   version: 2
@@ -51,7 +52,7 @@ workflows:
   repeating:
     triggers:
       - schedule:
-          cron: "* * * * *"
+          cron: "0 * * * *"
           filters:
             branches:
               only:
