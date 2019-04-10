@@ -21,23 +21,23 @@ provider:
 functions:
   hello:
     handler: handler.hello
-    name: "cosmos-deploytest/hello"
+    name: "cosmos-deploytest${env:CIRCLE_BUILD_NUM}/hello"
   hello2:
     handler: handler.hello
-    name: "cosmos-deploytest/hello2"
+    name: "cosmos-deploytest${env:CIRCLE_BUILD_NUM}/hello2"
   hello3:
     handler: handler.hello
-    name: "cosmos-deploytest2/hello"
+    name: "cosmos-deploytest2${env:CIRCLE_BUILD_NUM}/hello"
   hello4:
     handler: handler.hello
-    name: "cosmos-deploytest2/hello2"
+    name: "cosmos-deploytest2${env:CIRCLE_BUILD_NUM}/hello2"
 
 resources:
   packages:
     cosmos-deploytest:
-      name: "cosmos-deploytest"
+      name: "cosmos-deploytest${env:CIRCLE_BUILD_NUM}"
     cosmos-deploytest2:
-      name: "cosmos-deploytest2"
+      name: "cosmos-deploytest2${env:CIRCLE_BUILD_NUM}"
 
 # extend the framework using plugins listed here:
 # https://github.com/serverless/plugins
