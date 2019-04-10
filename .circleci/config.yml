@@ -43,18 +43,18 @@ jobs:
       - run: yarn run invoke4
       #- run: ./delete.sh
 
-workflows:
-  version: 2
-  commit:
-    jobs:
-      - build
-  repeating:
-    triggers:
-      - schedule:
-          cron: "* * * * *"
-          filters:
-            branches:
-              only:
-                - master
-    jobs:
-      - build
+#workflows:
+#  version: 2
+#  commit:
+#    jobs:
+#      - build
+#  repeating:
+#    triggers:
+#      - schedule:
+#          cron: "* * * * *"
+#          filters:
+#            branches:
+#              only:
+#                - master
+#    jobs:
+#      - build
