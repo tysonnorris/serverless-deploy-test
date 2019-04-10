@@ -41,7 +41,7 @@ jobs:
       - run: yarn run invoke2
       - run: yarn run invoke3
       - run: yarn run invoke4
-      - run: yarn run remove
+      - run: ./delete.sh
 
 workflows:
   version: 2
